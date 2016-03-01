@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "dictrump",
+  "version" : "1.0",
+  "description": "Replace all images of Donald Trump with dicbutt",
+  "background": {
+  	"scripts": ["js/jquery_1.11.0.js","js/background.js"],
+	  "persistent" : true
+   },
+   "content_scripts": [
+    	{	
+        "matches": ["http://*/*", "https://*/*"],
+        "css": ["style/inject.css"],
+        "js": ["js/jquery_1.11.0.js","js/content.js"]
+    	}
+	],
+  "offline_enabled": false,
+	"permissions" : ["activeTab",
+  "tabs",
+  "https://dev.perooz.io/api/*",
+  "storage",
+  "contextMenus",
+  "cookies",
+  "background"],
+  "icons": {
+    "16": "images/icon_mini_38.png"
+  },
+  "web_accessible_resources":[
+    "images/*.png",
+    "images/*.jpg",
+    "images/*.gif",
+  ]
+}
