@@ -10,6 +10,20 @@ var Extension = (function() {
 	}
 	
 	Extension.prototype = {
+		constructor: Extension,
+		getImages: function(){
+
+		},
+		setupReceiver : function() {
+			chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+
+                //setup mouseicon listener
+                if (request.method == "trumpcheck"){
+                    _this.getImages();
+                    sendResponse({message: "OK"});
+                }
+            });
+		}
 	}
 	
 	return Extension;
