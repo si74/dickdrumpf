@@ -12,7 +12,11 @@ var Extension = (function() {
 	Extension.prototype = {
 		constructor: Extension,
 		getImages: function(){
-
+			$("img").each(function(){
+				if (this.src.toLowerCase().indexOf('trump') > -1){
+					$(this).attr('src', 'http://i.imgur.com/s4GHeaz.png');
+				}
+			});
 		},
 		setupReceiver : function() {
 			chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
