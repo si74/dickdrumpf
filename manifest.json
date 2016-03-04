@@ -22,12 +22,6 @@
   "contextMenus",
   "cookies",
   "background"],
-  "icons": {
-    "16": "images/icon_mini_38.png"
-  },
-  "web_accessible_resources":[
-    "images/*.png",
-    "images/*.jpg",
-    "images/*.gif",
-  ]
+  "icons": {},
+  "web_accessible_resources":[]
 }

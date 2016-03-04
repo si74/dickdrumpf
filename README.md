@@ -1,2 +1,2 @@
-# dictrump
-chrome extension to replace all images of donald trump with dicbutt. 
+# dickdrumpf
+chrome extension to replace all images of donald trump with dickbutt. 

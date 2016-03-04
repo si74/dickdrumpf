@@ -13,8 +13,10 @@ var Extension = (function() {
 		constructor: Extension,
 		getImages: function(){
 			$("img").each(function(){
-				if (this.src.toLowerCase().indexOf('trump') > -1){
-					$(this).attr('src', 'http://i.imgur.com/s4GHeaz.png');
+				if (this.src.toLowerCase().indexOf('trump') > -1 
+					|| this.alt.toLowerCase().indexOf('trump') > -1
+					|| ){
+					$(this).attr('src', 'https://i.imgur.com/s4GHeaz.png');
 				}
 			});
 		},
