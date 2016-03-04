@@ -1,17 +1,17 @@
 {
   "manifest_version": 2,
-  "name": "dictrump",
+  "name": "dickdrumpf",
   "version" : "1.0",
   "description": "Replace all images of Donald Trump with dicbutt",
   "background": {
-  	"scripts": ["js/jquery_1.11.0.js","js/background.js"],
+  	"scripts": ["js/background.js"],
 	  "persistent" : true
    },
    "content_scripts": [
     	{	
         "matches": ["http://*/*", "https://*/*"],
         "css": ["style/inject.css"],
-        "js": ["js/jquery_1.11.0.js","js/content.js"]
+        "js": ["js/content.js"]
     	}
 	],
   "offline_enabled": false,
